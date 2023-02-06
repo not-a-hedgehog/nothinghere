@@ -1,0 +1,18 @@
+[10:33:20.556][INFO]: Successfully identified and loaded plugin crafttweaker:builtin
+[10:33:20.571][INFO]: Successfully identified and loaded plugin crafttweaker:builtin_forge
+[10:33:22.567][INFO]: The following mods have explicit CraftTweaker support through the default plugin:
+[10:33:22.568][INFO]: - 'crafttweaker' at version '9.1.203'
+[10:33:22.569][INFO]: - 'thermal' at version '9.1.0.34'
+[10:33:22.569][INFO]: - 'thermal_foundation' at version '9.1.0.34'
+[10:33:48.544][INFO]: Started loading scripts for loader 'initialize'
+[10:33:49.320][INFO]: Compiling and executing scripts
+[10:33:49.408][INFO]: Successfully initialized modules [crafttweaker, expansions]
+[10:33:49.601][INFO]: Execution for loader 'initialize' completed successfully
+[10:35:52.490][INFO]: Started loading scripts for loader 'tags'
+[10:35:52.522][INFO]: Compiling and executing scripts
+[10:35:52.941][INFO]: Successfully initialized modules [crafttweaker, expansions]
+[10:35:52.953][INFO]: Execution for loader 'tags' completed successfully
+[10:36:21.385][INFO]: Started loading scripts for loader 'crafttweaker'
+[10:36:21.418][INFO]: Compiling and executing scripts
+[10:36:24.339][INFO]: Successfully initialized modules [mods, crafttweaker, expansions]
+[10:36:24.350][INFO]: Execution for loader 'crafttweaker' completed successfully

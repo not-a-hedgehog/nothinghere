@@ -1,0 +1,351 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 06/02/2023 09:55
+Description: Initializing game
+
+java.lang.NoClassDefFoundError: net/minecraft/class_2378
+	at net.valhelsia.valhelsia_core.core.registry.RegistryManager$Builder.<init>(RegistryManager.java:80) ~[valhelsia_core-fabric-1.18.2-0.4.0.jar%23143!/:?] {re:classloading}
+	at com.stal111.forbidden_arcanus.ForbiddenArcanus.<clinit>(ForbiddenArcanus.java:48) ~[forbidden_arcanus-1.18.2-2.1.1.jar%2394!/:1.18.2-2.1.1] {re:classloading}
+	at com.stal111.forbidden_arcanus.common.item.modifier.ModifierHelper.getModifier(ModifierHelper.java:26) ~[forbidden_arcanus-1.18.2-2.1.1.jar%2394!/:1.18.2-2.1.1] {re:mixin,re:classloading}
+	at net.minecraft.world.item.ItemStack.handler$bab000$forbiddenArcanus_getHoverName(ItemStack.java:3104) ~[client-1.18.2-20220404.173914-srg.jar%23150!/:?] {re:mixin,xf:fml:forge:itemstack,re:classloading,xf:fml:forge:itemstack,pl:mixin:APP:placebo.mixins.json:ItemStackMixin,pl:mixin:APP:apotheosis.mixins.json:ItemStackMixin,pl:mixin:APP:relics.mixins.json:MixinItemStack,pl:mixin:APP:mixins.mlib.json:MixinItemStack,pl:mixin:APP:forbidden_arcanus.mixins.json:ItemStackMixin,pl:mixin:APP:canary.mixins.json:block.hopper.ItemStackMixin,pl:mixin:APP:canary.mixins.json:item.ItemStackMixin,pl:mixin:A}
+	at net.minecraft.world.item.ItemStack.m_41786_(ItemStack.java:593) ~[client-1.18.2-20220404.173914-srg.jar%23150!/:?] {re:mixin,xf:fml:forge:itemstack,re:classloading,xf:fml:forge:itemstack,pl:mixin:APP:placebo.mixins.json:ItemStackMixin,pl:mixin:APP:apotheosis.mixins.json:ItemStackMixin,pl:mixin:APP:relics.mixins.json:MixinItemStack,pl:mixin:APP:mixins.mlib.json:MixinItemStack,pl:mixin:APP:forbidden_arcanus.mixins.json:ItemStackMixin,pl:mixin:APP:canary.mixins.json:block.hopper.ItemStackMixin,pl:mixin:APP:canary.mixins.json:item.ItemStackMixin,pl:mixin:A}
+	at net.minecraft.world.item.ItemStack.m_41651_(ItemStack.java:629) ~[client-1.18.2-20220404.173914-srg.jar%23150!/:?] {re:mixin,xf:fml:forge:itemstack,re:classloading,xf:fml:forge:itemstack,pl:mixin:APP:placebo.mixins.json:ItemStackMixin,pl:mixin:APP:apotheosis.mixins.json:ItemStackMixin,pl:mixin:APP:relics.mixins.json:MixinItemStack,pl:mixin:APP:mixins.mlib.json:MixinItemStack,pl:mixin:APP:forbidden_arcanus.mixins.json:ItemStackMixin,pl:mixin:APP:canary.mixins.json:block.hopper.ItemStackMixin,pl:mixin:APP:canary.mixins.json:item.ItemStackMixin,pl:mixin:A}
+	at net.minecraft.client.Minecraft.m_91316_(Minecraft.java:701) ~[client-1.18.2-20220404.173914-srg.jar%23150!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:rubidium.mixins.json:core.MixinMinecraftClient,pl:mixin:APP:bookshelf.common.mixins.json:client.AccessorMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_Keybinds,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_Images,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_PipelineManagement,pl:mixin:APP:betterthirdperson.mixins.json:MinecraftMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:cgm.mixins.json:client.MinecraftMixin,pl:mixin:APP:sodium-extra.mixins.json:gui.MinecraftClientAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.searchtree.ReloadableSearchTree.m_8074_(ReloadableSearchTree.java:36) ~[client-1.18.2-20220404.173914-srg.jar%23150!/:?] {re:classloading}
+	at net.minecraft.client.searchtree.ReloadableIdSearchTree.m_8080_(ReloadableIdSearchTree.java:48) ~[client-1.18.2-20220404.173914-srg.jar%23150!/:?] {re:classloading}
+	at net.minecraft.client.Minecraft.lambda$createSearchTrees$10(Minecraft.java:719) ~[client-1.18.2-20220404.173914-srg.jar%23150!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:rubidium.mixins.json:core.MixinMinecraftClient,pl:mixin:APP:bookshelf.common.mixins.json:client.AccessorMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_Keybinds,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_Images,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_PipelineManagement,pl:mixin:APP:betterthirdperson.mixins.json:MinecraftMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:cgm.mixins.json:client.MinecraftMixin,pl:mixin:APP:sodium-extra.mixins.json:gui.MinecraftClientAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:mixin}
+	at net.minecraft.client.Minecraft.m_91271_(Minecraft.java:718) ~[client-1.18.2-20220404.173914-srg.jar%23150!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:rubidium.mixins.json:core.MixinMinecraftClient,pl:mixin:APP:bookshelf.common.mixins.json:client.AccessorMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_Keybinds,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_Images,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_PipelineManagement,pl:mixin:APP:betterthirdperson.mixins.json:MinecraftMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:cgm.mixins.json:client.MinecraftMixin,pl:mixin:APP:sodium-extra.mixins.json:gui.MinecraftClientAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:506) ~[client-1.18.2-20220404.173914-srg.jar%23150!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:rubidium.mixins.json:core.MixinMinecraftClient,pl:mixin:APP:bookshelf.common.mixins.json:client.AccessorMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_Keybinds,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_Images,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_PipelineManagement,pl:mixin:APP:betterthirdperson.mixins.json:MinecraftMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:cgm.mixins.json:client.MinecraftMixin,pl:mixin:APP:sodium-extra.mixins.json:gui.MinecraftClientAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:169) ~[client-1.18.2-20220404.173914-srg.jar%23150!/:?] {re:classloading,re:mixin,pl:runtimedistcleaner:A,pl:mixin:A,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$launchService$0(CommonClientLaunchHandler.java:31) ~[fmlloader-1.18.2-40.2.1.jar%2317!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:149) [bootstraplauncher-1.0.0.jar:?] {}
+Caused by: java.lang.ClassNotFoundException: net.minecraft.class_2378
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:138) ~[securejarhandler-1.0.3.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?] {}
+	... 27 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.valhelsia.valhelsia_core.core.registry.RegistryManager$Builder.<init>(RegistryManager.java:80) ~[valhelsia_core-fabric-1.18.2-0.4.0.jar%23143!/:?] {re:classloading}
+	at com.stal111.forbidden_arcanus.ForbiddenArcanus.<clinit>(ForbiddenArcanus.java:48) ~[forbidden_arcanus-1.18.2-2.1.1.jar%2394!/:1.18.2-2.1.1] {re:classloading}
+	at com.stal111.forbidden_arcanus.common.item.modifier.ModifierHelper.getModifier(ModifierHelper.java:26) ~[forbidden_arcanus-1.18.2-2.1.1.jar%2394!/:1.18.2-2.1.1] {re:mixin,re:classloading}
+	at net.minecraft.world.item.ItemStack.handler$bab000$forbiddenArcanus_getHoverName(ItemStack.java:3104) ~[client-1.18.2-20220404.173914-srg.jar%23150!/:?] {re:mixin,xf:fml:forge:itemstack,re:classloading,xf:fml:forge:itemstack,pl:mixin:APP:placebo.mixins.json:ItemStackMixin,pl:mixin:APP:apotheosis.mixins.json:ItemStackMixin,pl:mixin:APP:relics.mixins.json:MixinItemStack,pl:mixin:APP:mixins.mlib.json:MixinItemStack,pl:mixin:APP:forbidden_arcanus.mixins.json:ItemStackMixin,pl:mixin:APP:canary.mixins.json:block.hopper.ItemStackMixin,pl:mixin:APP:canary.mixins.json:item.ItemStackMixin,pl:mixin:A}
+	at net.minecraft.world.item.ItemStack.m_41786_(ItemStack.java:593) ~[client-1.18.2-20220404.173914-srg.jar%23150!/:?] {re:mixin,xf:fml:forge:itemstack,re:classloading,xf:fml:forge:itemstack,pl:mixin:APP:placebo.mixins.json:ItemStackMixin,pl:mixin:APP:apotheosis.mixins.json:ItemStackMixin,pl:mixin:APP:relics.mixins.json:MixinItemStack,pl:mixin:APP:mixins.mlib.json:MixinItemStack,pl:mixin:APP:forbidden_arcanus.mixins.json:ItemStackMixin,pl:mixin:APP:canary.mixins.json:block.hopper.ItemStackMixin,pl:mixin:APP:canary.mixins.json:item.ItemStackMixin,pl:mixin:A}
+	at net.minecraft.world.item.ItemStack.m_41651_(ItemStack.java:629) ~[client-1.18.2-20220404.173914-srg.jar%23150!/:?] {re:mixin,xf:fml:forge:itemstack,re:classloading,xf:fml:forge:itemstack,pl:mixin:APP:placebo.mixins.json:ItemStackMixin,pl:mixin:APP:apotheosis.mixins.json:ItemStackMixin,pl:mixin:APP:relics.mixins.json:MixinItemStack,pl:mixin:APP:mixins.mlib.json:MixinItemStack,pl:mixin:APP:forbidden_arcanus.mixins.json:ItemStackMixin,pl:mixin:APP:canary.mixins.json:block.hopper.ItemStackMixin,pl:mixin:APP:canary.mixins.json:item.ItemStackMixin,pl:mixin:A}
+	at net.minecraft.client.Minecraft.m_91316_(Minecraft.java:701) ~[client-1.18.2-20220404.173914-srg.jar%23150!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:rubidium.mixins.json:core.MixinMinecraftClient,pl:mixin:APP:bookshelf.common.mixins.json:client.AccessorMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_Keybinds,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_Images,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_PipelineManagement,pl:mixin:APP:betterthirdperson.mixins.json:MinecraftMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:cgm.mixins.json:client.MinecraftMixin,pl:mixin:APP:sodium-extra.mixins.json:gui.MinecraftClientAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.searchtree.ReloadableSearchTree.m_8074_(ReloadableSearchTree.java:36) ~[client-1.18.2-20220404.173914-srg.jar%23150!/:?] {re:classloading}
+	at net.minecraft.client.searchtree.ReloadableIdSearchTree.m_8080_(ReloadableIdSearchTree.java:48) ~[client-1.18.2-20220404.173914-srg.jar%23150!/:?] {re:classloading}
+	at net.minecraft.client.Minecraft.lambda$createSearchTrees$10(Minecraft.java:719) ~[client-1.18.2-20220404.173914-srg.jar%23150!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:rubidium.mixins.json:core.MixinMinecraftClient,pl:mixin:APP:bookshelf.common.mixins.json:client.AccessorMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_Keybinds,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_Images,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_PipelineManagement,pl:mixin:APP:betterthirdperson.mixins.json:MinecraftMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:cgm.mixins.json:client.MinecraftMixin,pl:mixin:APP:sodium-extra.mixins.json:gui.MinecraftClientAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:mixin}
+	at net.minecraft.client.Minecraft.m_91271_(Minecraft.java:718) ~[client-1.18.2-20220404.173914-srg.jar%23150!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:rubidium.mixins.json:core.MixinMinecraftClient,pl:mixin:APP:bookshelf.common.mixins.json:client.AccessorMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_Keybinds,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_Images,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_PipelineManagement,pl:mixin:APP:betterthirdperson.mixins.json:MinecraftMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:cgm.mixins.json:client.MinecraftMixin,pl:mixin:APP:sodium-extra.mixins.json:gui.MinecraftClientAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:506) ~[client-1.18.2-20220404.173914-srg.jar%23150!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:rubidium.mixins.json:core.MixinMinecraftClient,pl:mixin:APP:bookshelf.common.mixins.json:client.AccessorMinecraft,pl:mixin:APP:balm.mixins.json:MinecraftMixin,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_Keybinds,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_Images,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_PipelineManagement,pl:mixin:APP:betterthirdperson.mixins.json:MinecraftMixin,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:cgm.mixins.json:client.MinecraftMixin,pl:mixin:APP:sodium-extra.mixins.json:gui.MinecraftClientAccessor,pl:mixin:A,pl:runtimedistcleaner:A}
+-- Initialization --
+Details:
+	Modules: 
+		ADVAPI32.dll:API de base do Windows 32 avançada:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		COMCTL32.dll:Biblioteca de Controles de Experiência do Usuário:6.10 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPT32.dll:Crypto API32:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPTBASE.dll:Base cryptographic API DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPTSP.dll:Cryptographic Service Provider API:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		CoreMessaging.dll:Microsoft CoreMessaging Dll:10.0.22621.608 (WinBuild.160101.0800):Microsoft Corporation
+		CoreUIComponents.dll:Microsoft Core UI Components Dll:10.0.22621.608:Microsoft Corporation
+		DBGHELP.DLL:Windows Image Helper:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		DEVOBJ.dll:Device Information Set DLL:10.0.22621.755 (WinBuild.160101.0800):Microsoft Corporation
+		DNSAPI.dll:DLL da API de cliente DNS:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		GDI32.dll:GDI Client DLL:10.0.22621.608 (WinBuild.160101.0800):Microsoft Corporation
+		GLU32.dll:DLL da biblioteca de utilitários OpenGL:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		HID.DLL:Biblioteca de Usuário de HID:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		IMM32.DLL:Multi-User Windows IMM32 API Client DLL:10.0.22621.755 (WinBuild.160101.0800):Microsoft Corporation
+		IPHLPAPI.DLL:API de Auxiliar de IP:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		KERNEL32.DLL:DLL cliente da API BASE do Windows NT:10.0.22621.900 (WinBuild.160101.0800):Microsoft Corporation
+		KERNELBASE.dll:DLL cliente da API BASE do Windows NT:10.0.22621.900 (WinBuild.160101.0800):Microsoft Corporation
+		MMDevApi.dll:API do MMDevice:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		MSASN1.dll:ASN.1 Runtime APIs:10.0.22621.819 (WinBuild.160101.0800):Microsoft Corporation
+		MSCTF.dll:DLL de servidor MSCTF:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		MpOav.dll:IOfficeAntiVirus Module:4.18.2209.7 (WinBuild.160101.0800):Microsoft Corporation
+		NSI.dll:NSI User-mode interface DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		OLEAUT32.dll:OLEAUT32.DLL:10.0.22621.608 (WinBuild.160101.0800):Microsoft Corporation
+		Ole32.dll:Microsoft OLE para Windows:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		OpenAL.dll
+		PROPSYS.dll:Sistema de Propriedades  Microsoft:7.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		PSAPI.DLL:Process Status Helper:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		Pdh.dll:DLL auxiliar de dados de desempenho do Windows:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		RPCRT4.dll:Tempo de Execução da Chamada de Procedimento Remoto:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		SETUPAPI.DLL:API de instalação do Windows:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		SHCORE.dll:SHCORE:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		SHELL32.dll:DLL comum do Shell do Windows:10.0.22621.755 (WinBuild.160101.0800):Microsoft Corporation
+		USER32.dll:DLL de cliente API de usuário Windows para multiusuários:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		USERENV.dll:Userenv:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		VCRUNTIME140.dll:Microsoft® C Runtime Library:14.29.30133.0 built by: vcwrkspc:Microsoft Corporation
+		VERSION.dll:Version Checking and File Installation Libraries:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		WINHTTP.dll:Windows HTTP Services:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		WINMM.dll:MCI API DLL:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		WINTRUST.dll:Microsoft Trust Verification APIs:10.0.22621.900 (WinBuild.160101.0800):Microsoft Corporation
+		WS2_32.dll:DLL de 32 bits do Windows Socket 2.0:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		WSOCK32.dll:Windows Socket 32-Bit DLL:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		amsi.dll:Anti-Malware Scan Interface:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		atiadlxx.dll:ADL:7.19.40.1370:Advanced Micro Devices, Inc.
+		atig6pxx.dll:atiglpxx.dll:8.14.01.6564:Advanced Micro Devices, Inc. 
+		atig6txx.dll:atigktxx.dll:8.14.01.6564:Advanced Micro Devices, Inc. 
+		atio6axx.dll:AMD OpenGL driver:8.14.11000.13587:Advanced Micro Devices, Inc.
+		bcrypt.dll:Biblioteca de Primitivos Criptografados do Windows:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		bcryptPrimitives.dll:Windows Cryptographic Primitives Library:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		cfgmgr32.dll:Configuration Manager DLL:10.0.22621.755 (WinBuild.160101.0800):Microsoft Corporation
+		clbcatq.dll:COM+ Configuration Catalog:2001.12.10941.16384 (WinBuild.160101.0800):Microsoft Corporation
+		combase.dll:Microsoft COM para Windows:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		dbgcore.DLL:Windows Core Debugging Helpers:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		dhcpcsvc.DLL:Serviço do Cliente DHCP:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		dhcpcsvc6.DLL:Cliente DHCPv6:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		dinput8.dll:Microsoft DirectInput:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		directxdatabasehelper.dll:DirectXDatabaseHelper:10.0.22621.963 (WinBuild.160101.0800):Microsoft Corporation
+		dwmapi.dll:API do Gerenciador de Janelas da Área de Trabalho Microsoft:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		dxcore.dll:DXCore:10.0.22621.608 (WinBuild.160101.0800):Microsoft Corporation
+		dxva2.dll:DirectX Video Acceleration 2.0 DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		fwpuclnt.dll:API de Modo de Usuário FWP/IPsec:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		gdi32full.dll:GDI Client DLL:10.0.22621.963 (WinBuild.160101.0800):Microsoft Corporation
+		glfw.dll
+		icm32.dll:Microsoft Color Management Module (CMM):10.0.22621.608 (WinBuild.160101.0800):Microsoft Corporation
+		inputhost.dll:InputHost:10.0.22621.608 (WinBuild.160101.0800):Microsoft Corporation
+		java.dll:OpenJDK Platform binary:17.0.1.0:Microsoft
+		javaw.exe:OpenJDK Platform binary:17.0.1.0:Microsoft
+		jimage.dll:OpenJDK Platform binary:17.0.1.0:Microsoft
+		jli.dll:OpenJDK Platform binary:17.0.1.0:Microsoft
+		jna14955334088978594426.dll:JNA native library:6.1.2:Java(TM) Native Access (JNA)
+		jvm.dll:OpenJDK 64-Bit server VM:17.0.1.0:Microsoft
+		kernel.appcore.dll:AppModel API Host:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		lwjgl.dll
+		lwjgl_opengl.dll
+		lwjgl_stb.dll
+		management.dll:OpenJDK Platform binary:17.0.1.0:Microsoft
+		management_ext.dll:OpenJDK Platform binary:17.0.1.0:Microsoft
+		mscms.dll:DLL do Sistema de Correspondência de Cores Microsoft:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		msvcp140.dll:Microsoft® C Runtime Library:14.29.30133.0 built by: vcwrkspc:Microsoft Corporation
+		msvcp_win.dll:Microsoft® C Runtime Library:10.0.22621.608 (WinBuild.160101.0800):Microsoft Corporation
+		msvcrt.dll:Windows NT CRT DLL:7.0.22621.608 (WinBuild.160101.0800):Microsoft Corporation
+		mswsock.dll:Provedor de serviços do Microsoft Windows Sockets 2.0:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		napinsp.dll:Provedor de Correção de Nomeação de Emails:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		net.dll:OpenJDK Platform binary:17.0.1.0:Microsoft
+		nio.dll:OpenJDK Platform binary:17.0.1.0:Microsoft
+		nlansp_c.dll:NLA Namespace Service Provider DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		ntdll.dll:DLL de nível do NT:10.0.22621.900 (WinBuild.160101.0800):Microsoft Corporation
+		opengl32.dll:OpenGL Client DLL:10.0.22621.608 (WinBuild.160101.0800):Microsoft Corporation
+		perfos.dll:DLL de objetos de desempenho de sistema do Windows:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		pfclient.dll:SysMain Client:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		pnrpnsp.dll:PNRP Name Space Provider:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		profapi.dll:User Profile Basic API:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		rasadhlp.dll:Remote Access AutoDial Helper:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		rsaenh.dll:Microsoft Enhanced Cryptographic Provider:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		sechost.dll:Host for SCM/SDDL/LSA Lookup APIs:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		shlwapi.dll:Biblioteca de utilitário abreviado para Shell:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		svml.dll:OpenJDK Platform binary:17.0.1.0:Microsoft
+		textinputframework.dll:"TextInputFramework.DYNLINK":10.0.22621.900 (WinBuild.160101.0800):Microsoft Corporation
+		ucrtbase.dll:Microsoft® C Runtime Library:10.0.22621.608 (WinBuild.160101.0800):Microsoft Corporation
+		uxtheme.dll:Biblioteca UxTheme Microsoft:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		vcruntime140_1.dll:Microsoft® C Runtime Library:14.29.30133.0 built by: vcwrkspc:Microsoft Corporation
+		verify.dll:OpenJDK Platform binary:17.0.1.0:Microsoft
+		win32u.dll:Win32u:10.0.22621.963 (WinBuild.160101.0800):Microsoft Corporation
+		windows.storage.dll:API de Armazenamento Microsoft WinRT:10.0.22621.608 (WinBuild.160101.0800):Microsoft Corporation
+		winrnr.dll:LDAP RnR Provider DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		wintypes.dll:DLL dos Tipos de Base do Windows:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		wshbth.dll:Windows Sockets Helper DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		xinput1_4.dll:API do Controlador Comum da Microsoft:10.0.19041.2130 (WinBuild.160101.0800):Microsoft Corporation
+		zip.dll:OpenJDK Platform binary:17.0.1.0:Microsoft
+Stacktrace:
+	at net.minecraft.client.main.Main.main(Main.java:169) ~[client-1.18.2-20220404.173914-srg.jar%23150!/:?] {re:classloading,re:mixin,pl:runtimedistcleaner:A,pl:mixin:A,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$launchService$0(CommonClientLaunchHandler.java:31) ~[fmlloader-1.18.2-40.2.1.jar%2317!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:149) [bootstraplauncher-1.0.0.jar:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.18.2
+	Minecraft Version ID: 1.18.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.1, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Microsoft
+	Memory: 620284248 bytes (591 MiB) / 1476395008 bytes (1408 MiB) up to 5268045824 bytes (5024 MiB)
+	CPUs: 8
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx  
+	Identifier: AuthenticAMD Family 23 Model 24 Stepping 1
+	Microarchitecture: Zen / Zen+
+	Frequency (GHz): 2,10
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 8
+	Graphics card #0 name: AMD Radeon(TM) Vega 8 Graphics
+	Graphics card #0 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #0 VRAM (MB): 2048,00
+	Graphics card #0 deviceId: 0x15d8
+	Graphics card #0 versionInfo: DriverVersion=26.20.14046.3
+	Memory slot #0 capacity (MB): 4096,00
+	Memory slot #0 clockSpeed (GHz): 2,40
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 4096,00
+	Memory slot #1 clockSpeed (GHz): 2,40
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 12420,26
+	Virtual memory used (MB): 6791,86
+	Swap memory total (MB): 6400,00
+	Swap memory used (MB): 226,52
+	JVM Flags: 9 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -Xmx5000M -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M
+	Loaded Shaderpack: (off)
+	NEC status: No NEC detected
+	Launched Version: movingmods
+	Backend library: LWJGL version 3.2.2 SNAPSHOT
+	Backend API: AMD Radeon(TM) Vega 8 Graphics GL version 3.2.13587 Core Profile Forward-Compatible Context 19.40.46 26.20.14046.3, ATI Technologies Inc.
+	Window size: <not initialized>
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	CPU: 8x AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx 
+	ModLauncher: 9.1.3+9.1.3+main.9b69c82a
+	ModLauncher launch target: forgeclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		 mixin PLUGINSERVICE 
+		 eventbus PLUGINSERVICE 
+		 slf4jfixer PLUGINSERVICE 
+		 object_holder_definalize PLUGINSERVICE 
+		 runtime_enum_extender PLUGINSERVICE 
+		 capability_token_subclass PLUGINSERVICE 
+		 accesstransformer PLUGINSERVICE 
+		 runtimedistcleaner PLUGINSERVICE 
+		 mixin TRANSFORMATIONSERVICE 
+		 fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		majruszs-difficulty-1.18.2-1.6.1.jar              |Majrusz's Progressive Difficul|majruszsdifficulty            |1.6.1               |NONE      |Manifest: NOSIGNATURE
+		DoggyTalents-1.18.2-2.5.11.jar                    |Doggy Talents 2               |doggytalents                  |2.5.11              |NONE      |Manifest: NOSIGNATURE
+		Entity_Collision_FPS_Fix-forge-1.18.2-1.0.0.jar   |Entity Collision FPS Fix      |entitycollisionfpsfix         |1.0.0               |NONE      |Manifest: NOSIGNATURE
+		sophisticatedcore-1.18.2-0.5.37.202.jar           |Sophisticated Core            |sophisticatedcore             |1.18.2-0.5.37.202   |NONE      |Manifest: NOSIGNATURE
+		rubidium-0.5.4.jar                                |Rubidium                      |rubidium                      |0.5.4               |NONE      |Manifest: NOSIGNATURE
+		[1.18.2] Armor Status HUD-1.5.0.jar               |Armor Status HUD              |armorstatushud                |1.5.0               |NONE      |Manifest: NOSIGNATURE
+		IronJetpacks-1.18.2-5.1.4.jar                     |Iron Jetpacks                 |ironjetpacks                  |5.1.4               |NONE      |Manifest: NOSIGNATURE
+		Placebo-1.18.2-6.6.6.jar                          |Placebo                       |placebo                       |6.6.6               |NONE      |Manifest: NOSIGNATURE
+		waystone_towers-1.18.2-FORGE-1.0.9.jar            |Waystone Towers               |waystone_towers               |1.0.9               |NONE      |Manifest: NOSIGNATURE
+		potionsmaster-0.5.9-1.18.2-40.0.2.jar             |Potions Master                |potionsmaster                 |0.5.9-1.18.2-40.0.2 |NONE      |Manifest: NOSIGNATURE
+		Bookshelf-Forge-1.18.2-13.2.52.jar                |Bookshelf                     |bookshelf                     |13.2.52             |NONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		sophisticatedbackpacks-1.18.2-3.18.40.777.jar     |Sophisticated Backpacks       |sophisticatedbackpacks        |1.18.2-3.18.40.777  |NONE      |Manifest: NOSIGNATURE
+		DarkUtilities-Forge-1.18.2-10.1.6.jar             |DarkUtilities                 |darkutils                     |10.1.6              |NONE      |Manifest: NOSIGNATURE
+		Apotheosis-1.18.2-5.7.7.jar                       |Apotheosis                    |apotheosis                    |5.7.7               |NONE      |Manifest: NOSIGNATURE
+		balm-3.2.2+0.jar                                  |Balm                          |balm                          |3.2.2+0             |NONE      |Manifest: NOSIGNATURE
+		carryon-1.18.2-1.17.0.8.jar                       |Carry On                      |carryon                       |1.17.0.8            |NONE      |Manifest: NOSIGNATURE
+		JustEnoughResources-1.18.2-0.14.1.171.jar         |Just Enough Resources         |jeresources                   |0.14.1.171          |NONE      |Manifest: NOSIGNATURE
+		cloth-config-6.4.90-forge.jar                     |Cloth Config v4 API           |cloth_config                  |6.4.90              |NONE      |Manifest: NOSIGNATURE
+		[1.18.2] BobLib-0.3.0.jar                         |BobLib                        |boblib                        |0.3.0               |NONE      |Manifest: NOSIGNATURE
+		FarmersDelight-1.18.2-1.2.0.jar                   |Farmer's Delight              |farmersdelight                |1.18.2-1.2.0        |NONE      |Manifest: NOSIGNATURE
+		ColaMixinConfig-v1.0.2.jar                        |ColaConfig                    |caffeineconfig                |1.0.2               |NONE      |Manifest: NOSIGNATURE
+		villagespawnpoint-1.18.2-4.0.jar                  |Village Spawn Point           |villagespawnpoint             |4.0                 |NONE      |Manifest: NOSIGNATURE
+		TextruesRubidiumOptions-1.0.4-mc1.18.2.jar        |TexTrue's Rubidium Options    |reeses_sodium_options         |1.0.4-mc1.18.2      |NONE      |Manifest: NOSIGNATURE
+		curios-forge-1.18.2-5.0.7.1.jar                   |Curios API                    |curios                        |1.18.2-5.0.7.1      |NONE      |Manifest: NOSIGNATURE
+		relics-1.18.2-0.4.1.8.jar                         |Relics                        |relics                        |0.4.1.8             |NONE      |Manifest: NOSIGNATURE
+		Patchouli-1.18.2-71.1.jar                         |Patchouli                     |patchouli                     |1.18.2-71.1         |NONE      |Manifest: NOSIGNATURE
+		solsweetpotato-1.18.2-2.2.0.jar                   |Spice of Life: Sweet Potato Ed|solsweetpotato                |1.18.2-2.2.0        |NONE      |Manifest: NOSIGNATURE
+		oculus-1.4.3a.jar                                 |Oculus                        |oculus                        |1.4.3a              |NONE      |Manifest: NOSIGNATURE
+		collective-1.18.2-6.43.jar                        |Collective                    |collective                    |6.43                |NONE      |Manifest: NOSIGNATURE
+		OreExcavation-1.10.162.jar                        |OreExcavation                 |oreexcavation                 |1.10.162            |NONE      |Manifest: NOSIGNATURE
+		villagertools-1.18-1.0.2.jar                      |villagertools                 |villagertools                 |1.18-1.0.2          |NONE      |Manifest: 1f:47:ac:b1:61:82:96:b8:47:19:16:d2:61:81:11:60:3a:06:4b:61:31:56:7d:44:31:1e:0c:6f:22:5b:4c:ed
+		BetterThirdPerson-Forge-1.18.2-1.9.0.jar          |Better Third Person           |betterthirdperson             |1.9.0               |NONE      |Manifest: NOSIGNATURE
+		Runelic-Forge-1.18.2-11.0.1.jar                   |Runelic                       |runelic                       |11.0.1              |NONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		starterkit-1.18.2-5.0.jar                         |Starter Kit                   |starterkit                    |5.0                 |NONE      |Manifest: NOSIGNATURE
+		pluto-mc1.18.2-0.0.3.jar                          |Pluto                         |pluto                         |0.0.3               |NONE      |Manifest: NOSIGNATURE
+		constructionwand-1.18.2-2.7.jar                   |Construction Wand             |constructionwand              |1.18.2-2.7          |NONE      |Manifest: NOSIGNATURE
+		architectury-4.10.88-forge.jar                    |Architectury                  |architectury                  |4.10.88             |NONE      |Manifest: NOSIGNATURE
+		AI-Improvements-1.18.2-0.5.2.jar                  |AI-Improvements               |aiimprovements                |0.5.2               |NONE      |Manifest: NOSIGNATURE
+		framework-0.4.2-1.18.2.jar                        |Framework                     |framework                     |0.4.2               |NONE      |Manifest: NOSIGNATURE
+		enchantwithmob-1.18.2-4.2.1.jar                   |Enchant With Mob              |enchantwithmob                |1.18.2-4.2.1        |NONE      |Manifest: NOSIGNATURE
+		ScalingHealth-1.18.2-6.3.0+5.jar                  |Scaling Health                |scalinghealth                 |6.3.0+5             |NONE      |Manifest: NOSIGNATURE
+		geckolib-forge-1.18-3.0.57.jar                    |GeckoLib                      |geckolib3                     |3.0.57              |NONE      |Manifest: NOSIGNATURE
+		recruits-1.18.2-1.9.2.1.jar                       |Recruits Mod                  |recruits                      |1.9.2.1             |NONE      |Manifest: NOSIGNATURE
+		extra-utilities-reborn-1.7.4-release.jar          |Extra Utilities Rebirth       |extrautilitiesrebirth         |1.7.3               |NONE      |Manifest: NOSIGNATURE
+		Cyclic-1.18.2-1.7.13.jar                          |Cyclic                        |cyclic                        |1.18.2-1.7.13       |NONE      |Manifest: 1f:47:ac:b1:61:82:96:b8:47:19:16:d2:61:81:11:60:3a:06:4b:61:31:56:7d:44:31:1e:0c:6f:22:5b:4c:ed
+		Cucumber-1.18.2-5.1.3.jar                         |Cucumber Library              |cucumber                      |5.1.3               |NONE      |Manifest: NOSIGNATURE
+		ftb-library-forge-1802.3.9-build.167.jar          |FTB Library                   |ftblibrary                    |1802.3.9-build.167  |NONE      |Manifest: NOSIGNATURE
+		ftb-teams-forge-1802.2.10-build.96.jar            |FTB Teams                     |ftbteams                      |1802.2.10-build.96  |NONE      |Manifest: NOSIGNATURE
+		ftb-ranks-forge-1802.1.11-build.71.jar            |FTB Ranks                     |ftbranks                      |1802.1.11-build.71  |NONE      |Manifest: NOSIGNATURE
+		cgm-1.3.3-1.18.2.jar                              |MrCrayfish's Gun Mod          |cgm                           |1.3.3               |NONE      |Manifest: NOSIGNATURE
+		jei-1.18.2-forge-10.2.1.1002.jar                  |Just Enough Items             |jei                           |10.2.1.1002         |NONE      |Manifest: NOSIGNATURE
+		JEIEnchantmentInfo-1.17.1-2.0.0.jar               |JEI Enchantment Info          |jeienchantmentinfo            |1.17.1-2.0.0        |NONE      |Manifest: NOSIGNATURE
+		goblintraders-1.8.0-1.18.2.jar                    |Goblin Traders                |goblintraders                 |1.8.0               |NONE      |Manifest: NOSIGNATURE
+		waystones-forge-1.18.2-10.1.0.jar                 |Waystones                     |waystones                     |10.1.0              |NONE      |Manifest: NOSIGNATURE
+		Clumps-forge-1.18.2-8.0.0+17.jar                  |Clumps                        |clumps                        |8.0.0+17            |NONE      |Manifest: NOSIGNATURE
+		NaturesCompass-1.18.2-1.9.7-forge.jar             |Nature's Compass              |naturescompass                |1.18.2-1.9.7-forge  |NONE      |Manifest: NOSIGNATURE
+		artifacts-1.18.2-4.2.0.jar                        |Artifacts                     |artifacts                     |1.18.2-4.2.0        |NONE      |Manifest: NOSIGNATURE
+		SimpleStorageNetwork-1.18.2-1.6.2.jar             |Simple Storage Network        |storagenetwork                |1.18.2-1.6.2        |NONE      |Manifest: 1f:47:ac:b1:61:82:96:b8:47:19:16:d2:61:81:11:60:3a:06:4b:61:31:56:7d:44:31:1e:0c:6f:22:5b:4c:ed
+		configured-2.0.0-1.18.2.jar                       |Configured                    |configured                    |2.0.0               |NONE      |Manifest: NOSIGNATURE
+		DungeonCrawl-1.18.2-2.3.10.jar                    |Dungeon Crawl                 |dungeoncrawl                  |2.3.10              |NONE      |Manifest: NOSIGNATURE
+		mcjtylib-1.18-6.0.20.jar                          |McJtyLib                      |mcjtylib                      |1.18-6.0.20         |NONE      |Manifest: NOSIGNATURE
+		rftoolsbase-1.18-3.0.12.jar                       |RFToolsBase                   |rftoolsbase                   |1.18-3.0.12         |NONE      |Manifest: NOSIGNATURE
+		catalogue-1.6.2-1.18.2.jar                        |Catalogue                     |catalogue                     |1.6.2               |NONE      |Manifest: NOSIGNATURE
+		walljump-forge-1.18.1-1.3.7.jar                   |Wall-Jump!                    |walljump                      |1.18.1-1.3.7        |NONE      |Manifest: NOSIGNATURE
+		CraftTweaker-forge-1.18.2-9.1.203.jar             |CraftTweaker                  |crafttweaker                  |9.1.203             |NONE      |Manifest: NOSIGNATURE
+		ftb-chunks-forge-1802.3.12-build.217.jar          |FTB Chunks                    |ftbchunks                     |1802.3.12-build.217 |NONE      |Manifest: NOSIGNATURE
+		forge-1.18.2-40.2.1-universal.jar                 |Forge                         |forge                         |40.2.1              |NONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		silent-gear-1.18.2-2.10.17.jar                    |Silent Gear                   |silentgear                    |2.10.17             |NONE      |Manifest: NOSIGNATURE
+		inzheFoPCore-v.3.0.0-1.18.2.jar                   |inzheFoPs Core                |inzhefopcore                  |3.0.0               |NONE      |Manifest: NOSIGNATURE
+		craftingtweaks-forge-1.18.2-14.0.3.jar            |CraftingTweaks                |craftingtweaks                |14.0.3              |NONE      |Manifest: NOSIGNATURE
+		ZeroCore2-1.18.2-2.1.30.jar                       |Zero CORE 2                   |zerocore                      |1.18.2-2.1.30       |NONE      |Manifest: NOSIGNATURE
+		ExtremeReactors2-1.18.2-2.0.60.jar                |Extreme Reactors              |bigreactors                   |1.18.2-2.0.60       |NONE      |Manifest: NOSIGNATURE
+		client-1.18.2-20220404.173914-srg.jar             |Minecraft                     |minecraft                     |1.18.2              |NONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		cofh_core-1.18.2-9.1.2.32.jar                     |CoFH Core                     |cofh_core                     |9.1.2.32            |NONE      |Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		thermal_foundation-1.18.2-9.1.0.34.jar            |Thermal Series                |thermal                       |9.1.0.34            |NONE      |Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		thermal_innovation-1.18.2-9.1.0.15.jar            |Thermal Innovation            |thermal_innovation            |9.1.0.15            |NONE      |Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		thermal_expansion-1.18.2-9.1.0.18.jar             |Thermal Expansion             |thermal_expansion             |9.1.0.18            |NONE      |Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		EnchantmentDescriptions-Forge-1.18.2-10.0.12.jar  |EnchantmentDescriptions       |enchdesc                      |10.0.12             |NONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		token-enchanter-1.18.2-1.3.1.jar                  |Token Enchanter               |tokenenchanter                |1.3.1               |NONE      |Manifest: NOSIGNATURE
+		silent-lib-1.18.2-6.2.0.jar                       |Silent Lib                    |silentlib                     |6.2.0               |NONE      |Manifest: NOSIGNATURE
+		Jade-1.18.2-forge-5.2.6.jar                       |Jade                          |jade                          |5.2.6               |NONE      |Manifest: NOSIGNATURE
+		majrusz-library-1.18.2-3.1.0.jar                  |Majrusz Library               |mlib                          |3.1.0               |NONE      |Manifest: NOSIGNATURE
+		smoothboot(reloaded)-mc1.18.2-0.0.2.jar           |Smooth Boot (Reloaded)        |smoothboot                    |0.0.2               |NONE      |Manifest: NOSIGNATURE
+		betterfpsdist-1.18.2-1.5.jar                      |betterfpsdist mod             |betterfpsdist                 |1.18.2-1.5          |NONE      |Manifest: NOSIGNATURE
+		rftoolsbuilder-1.18-4.1.1.jar                     |RFToolsBuilder                |rftoolsbuilder                |1.18-4.1.1          |NONE      |Manifest: NOSIGNATURE
+		easy_villagers-1.18.2-1.0.11.jar                  |Easy Villagers                |easy_villagers                |1.18.2-1.0.11       |NONE      |Manifest: NOSIGNATURE
+		rubidium-extra-0.4.16+mc1.18.2-build.57.jar       |Rubidium Extra                |sodiumextra                   |0.4.16+mc1.18.2-buil|NONE      |Manifest: NOSIGNATURE
+		PigPen-Forge-1.18.2-8.0.1.jar                     |PigPen                        |pigpen                        |8.0.1               |NONE      |Manifest: NOSIGNATURE
+		JustEnoughProfessions-1.18.2-1.3.0.jar            |Just Enough Professions (JEP) |justenoughprofessions         |1.3.0               |NONE      |Manifest: NOSIGNATURE
+		FluxNetworks-1.18.2-7.0.8.12.jar                  |Flux Networks                 |fluxnetworks                  |7.0.8.12            |NONE      |Manifest: NOSIGNATURE
+		entityculling-forge-mc1.18-1.5.1.jar              |EntityCulling                 |entityculling                 |1.5.1               |NONE      |Manifest: NOSIGNATURE
+		hardcorerevival-forge-1.18.2-8.0.1.jar            |Hardcore Revival              |hardcorerevival               |8.0.1               |NONE      |Manifest: NOSIGNATURE
+		canary-mc1.18.2-0.1.4.jar                         |Canary                        |canary                        |0.1.4               |NONE      |Manifest: NOSIGNATURE
+		Enhanced_Celestials-forge-1.18.2-2.0.7.jar        |Enhanced Celestials           |enhancedcelestials            |2.0.7               |NONE      |Manifest: NOSIGNATURE
+		silents-gems-1.18.2-4.3.0.jar                     |Silent's Gems: Base           |silentgems                    |4.3.0               |NONE      |Manifest: NOSIGNATURE
+		expandability-6.0.0.jar                           |ExpandAbility                 |expandability                 |6.0.0               |NONE      |Manifest: NOSIGNATURE
+		Delightful-1.18.2-3.2.1.jar                       |Delightful                    |delightful                    |3.2.1               |NONE      |Manifest: NOSIGNATURE
+		CosmeticArmorReworked-1.18.2-v2a.jar              |CosmeticArmorReworked         |cosmeticarmorreworked         |1.18.2-v2a          |NONE      |Manifest: 5e:ed:25:99:e4:44:14:c0:dd:89:c1:a9:4c:10:b5:0d:e4:b1:52:50:45:82:13:d8:d0:32:89:67:56:57:01:53
+		valhelsia_core-fabric-1.18.2-0.4.0.jar            |Valhelsia Core                |valhelsia_core                |0.0NONE             |NONE      |Manifest: NOSIGNATURE
+		forbidden_arcanus-1.18.2-2.1.1.jar                |Forbidden & Arcanus           |forbidden_arcanus             |1.18.2-2.1.1        |NONE      |Manifest: NOSIGNATURE
