@@ -1,0 +1,24 @@
+{
+	id: "50aa864b-c4c9-4c03-be79-cfc3929d097d"
+	type: "party"
+	owner: "fba7576a-49d3-4723-aa9b-5f72bdc0409d"
+	ranks: {
+		fba7576a-49d3-4723-aa9b-5f72bdc0409d: "owner"
+	}
+	properties: {
+		"ftbteams:display_name": "cunnemembers"
+		"ftbteams:description": ""
+		"ftbteams:color": "#59F8FF"
+		"ftbteams:free_to_join": 0b
+		"ftbteams:max_msg_history_size": 1000
+		"ftbchunks:allow_explosions": 0b
+		"ftbchunks:allow_fake_players": 1b
+		"ftbchunks:block_edit_mode": "allies"
+		"ftbchunks:block_interact_mode": "allies"
+		"ftbchunks:entity_interact_mode": "allies"
+		"ftbchunks:claim_visibility": "public"
+		"ftbchunks:location_mode": "allies"
+	}
+	message_history: [{ from: "00000000-0000-0000-0000-000000000000", date: 1675700119984L, text: "{\"color\":\"yellow\",\"translate\":\"ftbteams.message.joined\",\"with\":[{\"text\":\"Lucas__Brito\"}]}" }]
+	extra: { }
+}

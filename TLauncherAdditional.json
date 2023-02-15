@@ -3315,6 +3315,46 @@
           "userInstall": false,
           "populateStatus": false,
           "available": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 388800,
+          "name": "Polymorph (Forge)",
+          "favorite": false,
+          "version": {
+            "id": 4119080,
+            "name": "polymorph-forge-1.18.2-0.46",
+            "metadata": {
+              "sha1": "f85b7ea80b7eebff8d7e5c9c79432d0360bd06c0",
+              "size": 255562,
+              "path": "mods/polymorph-forge-1.18.2-0.46.jar",
+              "url": "/mods/388800/4119080/polymorph-forge-1.18.2-0.46.jar"
+            },
+            "available": false
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "available": false
+        },
+        {
+          "stateGameElement": "active",
+          "id": 254268,
+          "name": "TorchMaster",
+          "favorite": false,
+          "version": {
+            "id": 3724596,
+            "name": "torchmaster-18.1.0",
+            "metadata": {
+              "sha1": "de042e7bd650f6ee00959cd32b6e53cb12a25413",
+              "size": 98651,
+              "path": "mods/torchmaster-18.1.0.jar",
+              "url": "/mods/254268/3724596/torchmaster-18.1.0.jar"
+            },
+            "available": false
+          },
+          "userInstall": false,
+          "populateStatus": false,
+          "available": false
         }
       ],
       "resourcePacks": [],
